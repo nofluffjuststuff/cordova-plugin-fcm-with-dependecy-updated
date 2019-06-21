@@ -27,10 +27,14 @@ FCMPlugin.prototype.getToken = function( success, error ){
 }
 
 // DEFAULT NOTIFICATION CALLBACK //
+// NFJS - disable default callback so that background notifications are received
+/*
 FCMPlugin.prototype.onNotificationReceived = function(payload){
 	console.log("Received push notification")
 	console.log(payload)
 }
+*/
+
 // DEFAULT TOKEN REFRESH CALLBACK //
 FCMPlugin.prototype.onTokenRefreshReceived = function(token){
 	console.log("Received token refresh")
